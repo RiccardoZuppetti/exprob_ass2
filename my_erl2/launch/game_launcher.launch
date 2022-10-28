@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+<node name="mv" pkg ="my_erl2" type="mv" output="screen" /> 
+<node pkg="my_erl2" type="AnnounceHypotesis.py" name="announcement" output="screen"/>
+<node pkg="my_erl2" type="ArmorInterface.py" name="armor_interface" output="screen"/>
+<node pkg="my_erl2" type="Reasoning.py" name="reasoning" output="screen"/>
+</launch>
