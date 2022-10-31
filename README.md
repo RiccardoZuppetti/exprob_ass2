@@ -73,7 +73,7 @@ Instead the services are:
 
 Finally the message is:
 
-- [ErlOracle.msg](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/srv/ErlOracle.msg), which is used to store a perceived hint
+- [ErlOracle.msg](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/msg/ErlOracle.msg), which is used to store a perceived hint
 
 ## States diagram
 
