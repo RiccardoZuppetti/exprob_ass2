@@ -65,3 +65,37 @@ The actions called by the dispatcher are implemented as classes, defined in the 
 - [move.cpp](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/src/move.cpp) implements the action devoted to the motion of the robot, that relies on this [script](https://github.com/CarmineD8/rt2_packages/blob/main/motion_plan/scripts/go_to_point_action.py)
 - [grippermotion.cpp](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/src/grippermotion.cpp) implements the action to move the robotic arm: in order to reach a certain location in the environment, the plan and the motion of the robotic arm is directly managed by moveit through the packege `moveit_assignment`
 - [perceivehints.cpp](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/src/perceivehints.cpp), [checkconsistency.cpp](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/src/checkconsistency.cpp) and [checkcorrect.cpp](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/src/checkcorrect.cpp) are three action nodes that simply recall the [ArmorInterface.py](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/scripts/ArmorInterface.py) script respectively to perceive a new hint, check if there is a new consistent hypothesis, check if the current consistent hypothesis is correct.
+
+Instead the services are:
+
+- [ArmorInterface.srv](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/srv/ArmorInterface.srv), which has as request the mode that the client wants in order to interact with ARMOR (0 to load ontology, 1 to check correct, 2 to check consistency, 3 to perceive an hint) and the ID of the hypothesis to be checked. The response is composed by the same mode and ID in addition to a success field, which is true if the action has been accomplished correctly.
+- [Announcement.srv](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/srv/Announcement.srv), which has as request an hypothesis (composed of [who, what, where]), while the response is a boolean to state that the action has been completed correctly.
+
+Finally the message is:
+
+- [ErlOracle.msg](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/srv/ErlOracle.msg), which is used to store a perceived hint
+
+## States diagram
+
+## UML diagram
+
+## Rqt-graph
+
+# How to Run
+
+## Requirements
+
+## How to compile the code
+
+## Description of the execution
+
+# Working hypothesis and environment
+
+## System's features
+
+## System's limitations
+
+## System's technical improvements
+
+# Author and contacts
+
