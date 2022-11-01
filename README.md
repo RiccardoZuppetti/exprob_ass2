@@ -104,4 +104,5 @@ Finally the message is:
 # Author and contacts
 
 Author: Riccardo Zuppetti
+
 Contacts: riccardo.zuppetti@icloud.com
