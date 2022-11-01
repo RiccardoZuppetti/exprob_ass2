@@ -77,7 +77,7 @@ Finally the message is:
 
 ## States diagram
 
-
+![states](https://user-images.githubusercontent.com/89387809/199301019-a5bef028-9fc5-477d-8fd3-ea43ac0476e9.jpg)
 
 ## UML diagram
 
