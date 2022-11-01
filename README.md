@@ -95,7 +95,7 @@ In order to compile this project, the following ROS packages are needed:
 - [motion_plan](https://github.com/CarmineD8/rt2_packages/tree/main/motion_plan)
 - [ROSPlan](https://github.com/KCL-Planning/ROSPlan)
 
-Then, in order to install Moveit, follow this [guide](https://github.com/RiccardoZuppetti/move_it_installation/blob/main/instr.txt)
+Then, in order to install Moveit, follow this [guide](https://github.com/RiccardoZuppetti/move_it_installation/blob/main/instr.txt).
 
 ## How to compile the code
 
@@ -124,6 +124,14 @@ apt-get install ros-noetic-<missing_package>
 ```
 
 ## Description of the execution
+
+In the following it is possible to observe several screenshots that refer to the execution of the project.
+
+<img width="1399" alt="Schermata 2022-10-28 alle 18 19 50" src="https://user-images.githubusercontent.com/89387809/199282915-1e671015-e592-46e6-8045-49db664713a6.png">
+
+<img width="1402" alt="Schermata 2022-10-28 alle 18 21 55" src="https://user-images.githubusercontent.com/89387809/199282922-17cd091d-009d-428c-be0f-4206fd72d205.png">
+
+<img width="1403" alt="Schermata 2022-10-28 alle 18 22 33" src="https://user-images.githubusercontent.com/89387809/199282931-c8d6a75b-c1c7-486f-8843-438a218bf6ba.png">
 
 # Working hypothesis and environment
 
