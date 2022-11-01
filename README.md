@@ -125,6 +125,38 @@ apt-get install ros-noetic-<missing_package>
 
 ## Description of the execution
 
+To launch the project it is needed to open four shells.
+
+In the first shell, digit:
+
+```
+roscore&
+```
+
+and then
+
+```
+rosrun armor execute it.emarolab.armor.ARMORMainService
+```
+
+In the second one digit:
+
+```
+roslaunch moveit_assignment gazebo_launcher.launch 2>/dev/null
+```
+
+In the third terminal digit the following command:
+
+```
+roslaunch my_erl2 pddl_launcher.launch 2>/dev/null
+```
+
+Finally, in the last shell digit:
+
+```
+roslaunch my_erl2 game_launcher.launch 2>/dev/null
+```
+
 In the following it is possible to observe several screenshots that refer to the execution of the project.
 
 <img width="1399" alt="Schermata 2022-10-28 alle 18 19 50" src="https://user-images.githubusercontent.com/89387809/199282915-1e671015-e592-46e6-8045-49db664713a6.png">
