@@ -181,7 +181,17 @@ The robotic arm is controlled by moveit, that directly compute the inverse kinem
 
 ## System's limitations
 
+Regarding the navigation module is not possible to control the yaw of the robot, since in the `go_to_point_action.py` script the final yaw is always zero with respect to the segment that goes from the starting location to the final one. So if the robot goes directly in two adjacent verteces of the environment the final yaw not always allows to perceive the hint. This issue has been overcomed making sure that the robot always returns in the (0, 0) position.
+
+After a certain number of iterations the arm does not reach the goal posistion and remains stopped even if the related action concludes correctly. In order to not make impact this behavior, a control is done on the perceived hints. If the same hint has been perceived twice that means that the arm does not move and consequently the related action fails.
+
 ## System's technical improvements
+
+Referring to the above issue of the yaw during the navigation, the desired yaw in the `go_to_point_action.py` script must be modified, or another navigation planning system can be used, such as move base.
+
+An improvement can be done on the robot model, since the robot has been done primitives shapes with only the strigtly needed requirements.
+
+Since the initial phase, which is responsible of load the ontology and explore the environment, is not managed through ROSPlan, a possible solution is to add a specific durative-action on the domain file. A predicate which is grounded only once the action is concluded and this predicate should be added as precondition of all other actions. Logically the ROS Plan will be adapted consequently.
 
 # Author and contacts
 
