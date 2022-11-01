@@ -1,7 +1,7 @@
 /** @package my_erl2
 * 
 * @file move.cpp
-* @brief Node to implement the robot motion
+* @brief Here the robot motion is implemented
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
