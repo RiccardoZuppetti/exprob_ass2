@@ -130,7 +130,7 @@ To launch the project it is needed to open four shells.
 In the first shell, digit:
 
 ```
-roscore&
+roscore &
 ```
 
 and then
