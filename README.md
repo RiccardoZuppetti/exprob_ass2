@@ -89,7 +89,39 @@ Finally the message is:
 
 ## Requirements
 
+In order to compile this project, the following ROS packages are needed:
+
+- [armor](https://github.com/EmaroLab/armor)
+- [motion_plan](https://github.com/CarmineD8/rt2_packages/tree/main/motion_plan)
+- [ROSPlan](https://github.com/KCL-Planning/ROSPlan)
+
+Then, in order to install Moveit, follow this [guide](https://github.com/RiccardoZuppetti/move_it_installation/blob/main/instr.txt)
+
 ## How to compile the code
+
+Move to your `catkin_ws/src/armor/armor` folder and digit (only the first time):
+
+```
+./gradlew deployApp
+```
+
+Then, move to your `catkin_ws/src` folder and clone this repository:
+
+```
+git clone https://github.com/RiccardoZuppetti/exprob_ass2.git experimental_assignment2
+```
+
+and build the workspace with the following command:
+
+```
+catkin_make
+```
+
+In case you get errors about missing packages, proceed with the installation of those packages by typing:
+
+```
+apt-get install ros-noetic-<missing_package>
+```
 
 ## Description of the execution
 
