@@ -159,11 +159,11 @@ roslaunch my_erl2 game_launcher.launch 2>/dev/null
 
 In the following it is possible to observe several screenshots that refer to the execution of the project.
 
-<img width="1399" alt="Schermata 2022-10-28 alle 18 19 50" src="https://user-images.githubusercontent.com/89387809/199282915-1e671015-e592-46e6-8045-49db664713a6.png">
+<img width="1399" alt="shell_1" src="https://user-images.githubusercontent.com/89387809/199282915-1e671015-e592-46e6-8045-49db664713a6.png">
 
-<img width="1402" alt="Schermata 2022-10-28 alle 18 21 55" src="https://user-images.githubusercontent.com/89387809/199282922-17cd091d-009d-428c-be0f-4206fd72d205.png">
+<img width="1402" alt="shell_2" src="https://user-images.githubusercontent.com/89387809/199282922-17cd091d-009d-428c-be0f-4206fd72d205.png">
 
-<img width="1403" alt="Schermata 2022-10-28 alle 18 22 33" src="https://user-images.githubusercontent.com/89387809/199282931-c8d6a75b-c1c7-486f-8843-438a218bf6ba.png">
+<img width="1403" alt="shell_3" src="https://user-images.githubusercontent.com/89387809/199282931-c8d6a75b-c1c7-486f-8843-438a218bf6ba.png">
 
 # Working hypothesis and environment
 
