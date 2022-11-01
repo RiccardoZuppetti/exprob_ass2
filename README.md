@@ -75,11 +75,15 @@ Finally the message is:
 
 - [ErlOracle.msg](https://github.com/RiccardoZuppetti/exprob_ass2/blob/main/my_erl2/msg/ErlOracle.msg), which is used to store a perceived hint
 
+## State diagram
+
 ## UML diagram
 
 ![UML_2](https://user-images.githubusercontent.com/89387809/199231588-3ade1cd1-e29a-4c11-b00a-0faf38fe634a.jpg)
 
 ## Rqt-graph
+
+![rqt_graph](https://user-images.githubusercontent.com/89387809/199276290-dde7ac8b-ea2f-4122-b9fe-79df435cab74.png)
 
 # How to Run
 
