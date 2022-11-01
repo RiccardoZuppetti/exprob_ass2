@@ -169,6 +169,16 @@ In the following it is possible to observe several screenshots that refer to the
 
 ## System's features
 
+The system is characterized by a modular architecture, since each component has a specific role in the architecture.
+
+As can be seen in the nodes, services and actions are the communication protocols used. This means that most of the declared modules are sincronized with the others. 
+
+The ontology is the core of the whole game. It allows to reason about hypotesis. The hypothesis are make of hints. Hints can belong to three different classes: PERSON, PLACE and WEAPON. The perceived hints as ErlOracle message are the A-box of these concepts. The hypotesis belong to the COMPLETE class if they has at least one PERSON, one WEAPON and one PLACE, while they belong also to the INCONSISTENT class if they have more than one PERSON or PLACE or WEAPON. Consequently the consistent hypotesis are the ones that has only one entity for each hint class and they are the ones which belong to the COMPLETE class and not to the INCOSISTENT one. The INCORRECT class, instead, has as instances all the hypothesis already checked as not-correct.
+
+The ROSPlan system manages the whole simulation. This firstly works as PDDL planning system which generate a plan in order to reach the goal in the optimal way. ROSPlan is basically the interface between the PDDL file and ROS. This allows to syncronize the PDDL problem, the execution of the PDDL's durative actions and the corresponding actions in ROS. ROSPlan guarantee optimal performances with respect to a simple finite state machine.
+
+The robotic arm is controlled by moveit, that directly compute the inverse kinematic, find the optimal plan with RRT to reach a certain goal and execute it.
+
 ## System's limitations
 
 ## System's technical improvements
