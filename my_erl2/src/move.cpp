@@ -23,7 +23,7 @@
 *    /rosplan_interface_move
 *
 * Action Client:
-*  None
+*    /reaching_goal
 *
 */
 
