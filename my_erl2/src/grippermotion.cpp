@@ -1,7 +1,7 @@
 /** @package my_erl2
 * 
 * @file grippermotion.cpp
-* @brief Node to implement the check correct action 
+* @brief Node to implement the motion of the gripper
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
