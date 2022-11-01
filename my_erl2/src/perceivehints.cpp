@@ -1,7 +1,7 @@
 /** @package my_erl2
 * 
 * @file perceivehints.cpp
-* @brief Node to implement the check correct action 
+* @brief Here the perceive hint action is implemented
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
