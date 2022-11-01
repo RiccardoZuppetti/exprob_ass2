@@ -8,7 +8,7 @@ The project is developed using the provided docker container. In the event that 
 
 # Description of the package
 
-## Robot behaviour and ROSPlan
+## Robot behaviour and ROSPlan architecture
 
 Referring to the main purpose of the project, the robot should perform the following actions:
 
