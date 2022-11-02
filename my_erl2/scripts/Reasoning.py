@@ -1,14 +1,14 @@
 #! /usr/bin/env python
 
-##  /package my_erl2
+##  \package my_erl2
 #   
-#   /file Reasoning.py
-#   /brief ROS node that implements the master of the entire architecture and manages the whole simulation
-#   /author Riccardo Zuppetti
-#   /version 1.0
-#   /date 09/08/2022
+#   \file Reasoning.py
+#   \brief ROS node that implements the master of the entire architecture and manages the whole simulation
+#   \author Riccardo Zuppetti
+#   \version 1.0
+#   \date 09/08/2022
 #   
-#   /details
+#   \details
 #   
 #   Subscribes to: <BR>
 #       None
@@ -42,9 +42,9 @@ from std_srvs.srv import Empty, Trigger, TriggerResponse
 from rosplan_dispatch_msgs.srv import DispatchService
 
 ##
-#   /brief Query function
-#   /param : None
-#   /return : None
+#   \brief Query function
+#   \param : None
+#   \return : None
 #
 #   This function is used to interface with ROSPlan. It continously load the problem depending on the actual state grounded predicates, generate a plan, parse it and dispatch actions.
 #   The function is runned each time an action fails since the goal of the problem is not reached.
