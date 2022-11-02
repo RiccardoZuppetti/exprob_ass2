@@ -44,6 +44,14 @@
 #include <sstream>
 ros::ServiceClient client;
 
+namespace KCL_rosplan {
+
+CheckCorrectActionInterface::CheckCorrectActionInterface(ros::NodeHandle &nh) {
+	// here the initialization
+	
+
+}
+	
 /**
 * @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
@@ -53,14 +61,6 @@ ros::ServiceClient client;
 * In this function is directly called the /armor_interface service to check if the current consistent hypothesis is correct.
 * Return value is True if is correct and the game ended.
 */
-
-namespace KCL_rosplan {
-
-CheckCorrectActionInterface::CheckCorrectActionInterface(ros::NodeHandle &nh) {
-	// here the initialization
-	
-
-}
  
 bool CheckCorrectActionInterface::concreteCallback(const rosplan_dispatch_msgs::ActionDispatch::ConstPtr& msg) {
 // here the implementation of the action
