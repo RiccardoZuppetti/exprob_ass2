@@ -1,14 +1,14 @@
 #! /usr/bin/env python
 
-##  /package my_erl2
+##  \package my_erl2
 #   
-#   /file AnnounceHypotesis.py
-#   /brief ROS node used for simulating the robot announcement
-#   /author Riccardo Zuppetti
-#   /version 1.0
-#   /date 09/08/2022
+#   \file AnnounceHypotesis.py
+#   \brief ROS node used for simulating the robot announcement
+#   \author Riccardo Zuppetti
+#   \version 1.0
+#   \date 09/08/2022
 #   
-#   /details
+#   \details
 #   
 #   Subscribes to: <BR>
 #       None
@@ -36,9 +36,9 @@ import actionlib
 from motion_plan.msg import PlanningAction, PlanningGoal
 
 ##
-#   /brief Callback function
-#   /param req : data retrieved on the /announce_service topic
-#   /return : true
+#   \brief Callback function
+#   \param req : data retrieved on the /announce_service topic
+#   \return : true
 #
 #   This function retrieves the request field of the Announcement message. Inside the custom message is present the istances of classes PERSON, PLACE, WEAPON
 #   corresponding to the hypothesis to announce. The robot firstly reach the centre of the arena, the announce the hypothesis finally returns to the initial location.
