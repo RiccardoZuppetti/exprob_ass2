@@ -43,14 +43,6 @@
 
 ros::ServiceClient client;
 
-namespace KCL_rosplan {
-
-CheckConsistencyActionInterface::CheckConsistencyActionInterface(ros::NodeHandle &nh) {
-	// here the initialization
-	
-
-}
-
 /**
 * @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
@@ -60,6 +52,14 @@ CheckConsistencyActionInterface::CheckConsistencyActionInterface(ros::NodeHandle
 * In this function is directly called the /armor_interface service to check if there is a new consistent hypothesis.
 * Return value is True if there is.
 */
+
+namespace KCL_rosplan {
+
+CheckConsistencyActionInterface::CheckConsistencyActionInterface(ros::NodeHandle &nh) {
+	// here the initialization
+	
+
+}
  
 bool CheckConsistencyActionInterface::concreteCallback(const rosplan_dispatch_msgs::ActionDispatch::ConstPtr& msg) {
         // here the implementation of the action
