@@ -2,13 +2,12 @@
 * 
 * @file move.cpp
 * @brief Here the robot motion is implemented
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    /odom
