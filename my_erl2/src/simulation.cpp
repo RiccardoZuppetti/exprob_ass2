@@ -2,13 +2,12 @@
 * 
 * @file simulation.cpp
 * @brief Node to implement the overall simulation
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    /gazebo/link_states
