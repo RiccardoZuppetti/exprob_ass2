@@ -42,6 +42,14 @@
 
 ros::ServiceClient client;
 
+namespace KCL_rosplan {
+
+PerceiveHintsActionInterface::PerceiveHintsActionInterface(ros::NodeHandle &nh) {
+	// here the initialization
+	
+
+}
+
 /**
 * @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
@@ -51,14 +59,6 @@ ros::ServiceClient client;
 * In this function is directly called the /armor_interface service to perceive a new hint
 * Return value is True if an hint is perceived.
 */
-
-namespace KCL_rosplan {
-
-PerceiveHintsActionInterface::PerceiveHintsActionInterface(ros::NodeHandle &nh) {
-	// here the initialization
-	
-
-}
 
 bool PerceiveHintsActionInterface::concreteCallback(const rosplan_dispatch_msgs::ActionDispatch::ConstPtr& msg) {
         // here the implementation of the action
