@@ -2,13 +2,12 @@
 * 
 * @file initial_phase.cpp
 * @brief Node to implement the initial phase service 
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    /oracle_hint
@@ -61,7 +60,7 @@ int down[4]={0,0,0,0};
 bool activate=false;
 
 /**
-* @brief This function is the callback of /oracle_hint subscribers
+* @brief : This function is the callback of /oracle_hint subscribers
 * @param msg : the ErlOracle msg published 
 * 
 * @return : true
@@ -75,7 +74,7 @@ void Callback(const my_erl2::ErlOracle::ConstPtr& msg)
 }
 
 /**
-* @brief move function
+* @brief : move function
 * @param x : the desired x-coordinate
 * @param y : the desired y-coordinate 
 * @param t : the desired yaw
@@ -103,7 +102,7 @@ void move(double x, double y,double t){
         moved=true;
 }
 /**
-* @brief move_gripper function
+* @brief : move_gripper function
 * @param x :the desired x-coordinate of the end-effector
 * @param y : the desired y-coordinate of the end-effector
 * @param start : boolean 
@@ -219,7 +218,7 @@ void move_gripper(double x, double y,bool start){
 }
 
 /**
-* @brief fsm function
+* @brief : fsm function
 * @param : None
 * 
 * @return : None
