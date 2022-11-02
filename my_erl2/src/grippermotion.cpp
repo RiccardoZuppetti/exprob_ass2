@@ -2,13 +2,12 @@
 * 
 * @file grippermotion.cpp
 * @brief Node to implement the motion of the gripper
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    None
@@ -51,7 +50,7 @@ GripperMotionActionInterface::GripperMotionActionInterface(ros::NodeHandle &nh) 
 }
 
 /**
-* @brief This function is the callback function of the service for server.
+* @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
 * 
 * @return : true A boolean value
