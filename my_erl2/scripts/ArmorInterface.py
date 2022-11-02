@@ -1,14 +1,14 @@
 #! /usr/bin/env python
 
-##  /package my_erl2
+##  \package my_erl2
 #   
-#   /file ArmorInterface.py
-#   /brief ROS node used to interact with armor
-#   /author Riccardo Zuppetti
-#   /version 1.0
-#   /date 09/08/2022
+#   \file ArmorInterface.py
+#   \brief ROS node used to interact with armor
+#   \author Riccardo Zuppetti
+#   \version 1.0
+#   \date 09/08/2022
 #   
-#   /details
+#   \details
 #   
 #   Subscribes to: <BR>
 #       /oracle_hint
@@ -42,12 +42,12 @@ from armor_msgs.srv import ArmorDirective
 # mode 2 consistency
 
 ##
-#   /brief Ontology interaction function
-#   /param command
-#   /param primary_command_spec
-#   /param secondary_command_spec
-#   /param arg
-#   /return msg : ArmorDirectiveRes
+#   \brief Ontology interaction function
+#   \param command
+#   \param primary_command_spec
+#   \param secondary_command_spec
+#   \param arg
+#   \return msg : ArmorDirectiveRes
 #
 #   This function is used to interface with the ontology through the ARMOR action server. It get as argument all fields of the ArmorDirective message to fill.
 #
@@ -74,9 +74,9 @@ def ontology_interaction(
     return resp
 
 ##
-#   /brief Response function
-#   /param st : stringe to be managed
-#   /return st : arranged string
+#   \brief Response function
+#   \param st : stringe to be managed
+#   \return st : arranged string
 #
 #   This function is used to manage the strings retrieved by aRMOR service
 #
@@ -89,9 +89,9 @@ def menage_response(st):
     return st
 
 ##
-#   /brief Load ontology function
-#   /param : None
-#   /return : None
+#   \brief Load ontology function
+#   \param : None
+#   \return : None
 #
 #   This function is used to load the ontology and initialize the classes
 #
@@ -119,9 +119,9 @@ def load_initialize_ontology():
     r8 = ontology_interaction('DISJOINT', 'CLASS', '', ['INCORRECT', 'PLACE'])
 
 ##
-#   /brief Clbk function
-#   /param msg : ArmorIntrfaceRequest
-#   /return msg : ArmorInterfaceResponse
+#   \brief Clbk function
+#   \param msg : ArmorIntrfaceRequest
+#   \return msg : ArmorInterfaceResponse
 #
 #   The node can interface in four different way with armor defendig on the mode fiel of the request.
 #   If mode is 0 the ontology is loaded and initialized. 
@@ -312,9 +312,9 @@ def clbk(req):
         return _res
         
 ##
-#   /brief Callback function
-#   /param msg : ErlOracle
-#   /return : None
+#   \brief Callback function
+#   \param msg : ErlOracle
+#   \return : None
 #
 #   When an hint is perceived it is published as an ErlOracle message on the /oracle_hint topic.
 #   Once subscribed the message is saved on the global variable erloracle.
