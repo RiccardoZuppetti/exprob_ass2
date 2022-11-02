@@ -2,13 +2,12 @@
 * 
 * @file save_erloracle.cpp
 * @brief Node to save erloracle
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    /oracle_hint
