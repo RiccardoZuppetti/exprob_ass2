@@ -2,13 +2,12 @@
 * 
 * @file checkconsistency.cpp
 * @brief Node to implement the check consistency action 
+* 
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    None
@@ -53,7 +52,7 @@ CheckConsistencyActionInterface::CheckConsistencyActionInterface(ros::NodeHandle
 }
 
 /**
-* @brief This function is the callback function of the service for server.
+* @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
 * 
 * @return : true 
