@@ -2,13 +2,12 @@
 * 
 * @file perceivehints.cpp
 * @brief Here the perceive hint action is implemented
+*
 * @author Riccardo Zuppetti
 * @version 1.0
 * @date 09/08/2022
-*
-*
-*
 * @details 
+*
 *
 * Subscribes to: <BR>
 *    None
@@ -43,15 +42,8 @@
 
 ros::ServiceClient client;
 
-namespace KCL_rosplan {
-
-PerceiveHintsActionInterface::PerceiveHintsActionInterface(ros::NodeHandle &nh) {
-	// here the initialization
-	
-
-}
 /**
-* @brief This function is the callback function of the service for server.
+* @brief : This function is the callback function of the service for server.
 * @param msg : the request received from the dispatcher
 * 
 * @return : true 
@@ -59,6 +51,15 @@ PerceiveHintsActionInterface::PerceiveHintsActionInterface(ros::NodeHandle &nh) 
 * In this function is directly called the /armor_interface service to perceive a new hint
 * Return value is True if an hint is perceived.
 */
+
+namespace KCL_rosplan {
+
+PerceiveHintsActionInterface::PerceiveHintsActionInterface(ros::NodeHandle &nh) {
+	// here the initialization
+	
+
+}
+
 bool PerceiveHintsActionInterface::concreteCallback(const rosplan_dispatch_msgs::ActionDispatch::ConstPtr& msg) {
         // here the implementation of the action
 	my_erl2::ArmorInterface srv;
